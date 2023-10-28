@@ -1,0 +1,39 @@
+<div class="calculator">
+    <h1>Calculator</h1>
+    <input type="text" [(ngModel)]="display" class="display" disabled>
+    <div class="buttons">
+        <div>
+            <button (click)="deleteData()">AC</button>
+            <button (click)="clear()">C</button>
+            <button (click)="appendToDisplay($event.target)">%</button>
+            <button (click)="appendToDisplay($event.target)">/</button>
+        </div>
+        <div>
+            <button (click)="appendToDisplay($event.target)">7</button>
+            <button (click)="appendToDisplay($event.target)">8</button>
+            <button (click)="appendToDisplay($event.target)">9</button>
+            <button (click)="appendToDisplay($event.target)">*</button>
+        </div>
+        <div>
+            <button (click)="appendToDisplay($event.target)">4</button>
+            <button (click)="appendToDisplay($event.target)">5</button>
+            <button (click)="appendToDisplay($event.target)">6</button>
+            <button (click)="appendToDisplay($event.target)">-</button>
+        </div>
+        <div>
+            <button (click)="appendToDisplay($event.target)">1</button>
+            <button (click)="appendToDisplay($event.target)">2</button>
+            <button (click)="appendToDisplay($event.target)">3</button>
+            <button (click)="appendToDisplay($event.target)">+</button>
+        </div>
+        <div>
+            <button (click)="appendToDisplay($event.target)">.</button>
+            <button (click)="appendToDisplay($event.target)">0</button>
+            <button (click)="appendToDisplay($event.target)">.</button>
+            <button (click)="calculate()">=</button>
+        </div>
+
+
+        <!--<button (click)="appendToDisplay('.')">.</button> ****Esta es otra forma de hacerlo-->
+
+    </div>
